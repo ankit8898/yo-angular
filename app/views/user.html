@@ -8,8 +8,8 @@
 </div>
 
 <div>
-	<h3>Below series {{reversedArray(factory.arr).message}}</h3>
+	<h3>Below series {{(factory.arr|reverse).message}}</h3>
 	<ul>
-		<li ng-repeat="i in reversedArray(factory.arr).bb">{{i}}</li>
+		<li ng-repeat="i in (factory.arr|reverse).bb">{{i}}</li>
 	</ul>
 </div>
