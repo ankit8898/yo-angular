@@ -5,8 +5,8 @@ angular.module('angularDemoApp')
     $scope.user = {name: "Ankit"};
     $scope.factory = datum;
 
-    $scope.reversedArray = function(){
-    	var v = {message: "From Method", bb: $scope.factory.arr.reverse()};
+    $scope.reversedArray = function(arr){
+    	var v = {message: "From Method", bb: arr.reverse()};
     	return v;
     }
   });
