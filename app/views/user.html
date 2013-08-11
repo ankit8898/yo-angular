@@ -1,15 +1,36 @@
-<div class="hero-unit">
-	<p>You now have</p>
-	<h1>{{user.name}}</h1>
-	<h3>Below series {{factory.name}}</h3>
-	<ul>
-		<li ng-repeat="i in factory.arr">{{i}}</li>
-	</ul>
-</div>
+<div class="container">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Angular Study</a>
+			<ul class="nav">
+				<li class="active"><a href="#/">Home</a></li>
+				<li class="active"><a href="#/users">Users</a></li>
+			</ul>
+			<ul class="nav pull-right">
+				<li class="active"><a href="#">Welcome {{user.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row"> 
+			<div class="row">
+				<div class="span6">
+					<div class="hero-unit">
+					<h3>Below series {{factory.name}}</h3>
+					<ul>
+						<li ng-repeat="i in factory.arr">{{i}}</li>
+					</ul>
+				</div>
+			</div>
+				<div class="span3">
+					<div class="hero-unit">
+						<h3>Below series {{(factory.arr|reverse).message}}</h3>
+						<ul>
+							<li ng-repeat="i in (factory.arr|reverse).bb">{{i}}</li>
+						</ul>
+					</div></div>
+				</div>
+			</div>
+	</div>
 
-<div>
-	<h3>Below series {{(factory.arr|reverse).message}}</h3>
-	<ul>
-		<li ng-repeat="i in (factory.arr|reverse).bb">{{i}}</li>
-	</ul>
-</div>
+
+
