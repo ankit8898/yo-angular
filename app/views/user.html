@@ -1,8 +1,15 @@
 <div class="hero-unit">
-  <p>You now have</p>
-  <h1>{{user.name}}</h1>
-  <h3>Below series {{factory.name}}</h3>
-   <ul>
-      <li ng-repeat="i in factory.arr">{{i}}</li>
-  </ul>
+	<p>You now have</p>
+	<h1>{{user.name}}</h1>
+	<h3>Below series {{factory.name}}</h3>
+	<ul>
+		<li ng-repeat="i in factory.arr">{{i}}</li>
+	</ul>
+</div>
+
+<div>
+	<h3>Below series {{reversedArray().message}}</h3>
+	<ul>
+		<li ng-repeat="i in reversedArray().bb">{{i}}</li>
+	</ul>
 </div>
