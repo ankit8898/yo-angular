@@ -12,25 +12,20 @@
 		</div>
 	</div>
 	<div class="row"> 
-			<div class="row">
-				<div class="span6">
-					<div class="hero-unit">
-					<h3>Below series {{factory.name}}</h3>
-					<ul>
-						<li ng-repeat="i in factory.arr">{{i}}</li>
-					</ul>
-				</div>
-			</div>
-				<div class="span3">
-					<div class="hero-unit">
-						<h3>Below series {{(factory.arr|reverse).message}}</h3>
-						<ul>
-							<li ng-repeat="i in (factory.arr|reverse).bb">{{i}}</li>
-						</ul>
-					</div></div>
-				</div>
-			</div>
+		<div class="span9">
+			<h3>Users</h3>
+			<table class="table table-striped">
+				<thead>
+					<th>Name</th>
+					<th>Age</th>
+				</thead>
+				<tbody>
+					<tr ng-repeat="i in factory">
+						<td>{{i.name}}</td>
+						<td>{{i.age}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
-
-
-
+</div>
